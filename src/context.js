@@ -35,6 +35,7 @@ const AppProvider = ({ children }) => {
         setCount,
         setSearch,
         setLoading,
+        fetchCocktails,
       }}
     >
       {children}

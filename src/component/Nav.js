@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useGlobalContext } from "../context";
 
 const Nav = () => {
-  const { count, setCount } = useGlobalContext();
+  const { count, setCount, setSearch } = useGlobalContext();
   return (
     <nav className="navbar">
       <div className="nav-center">
@@ -16,7 +16,9 @@ const Nav = () => {
         </Link>
         <ul className="nav-links">
           <li>
-            <Link to="/">home</Link>
+            <Link onClick={() => setSearch("a")} to="/">
+              home
+            </Link>
           </li>
           <li>
             <Link onClick={() => setCount(count + 1)} to="/random">
