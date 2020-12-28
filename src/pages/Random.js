@@ -3,7 +3,7 @@ import { useGlobalContext } from "../context";
 const url = "https://www.thecocktaildb.com/api/json/v1/1/random.php";
 
 const Random = () => {
-  const { setLoading, count, loading } = useGlobalContext();
+  const { setLoading, count, loading, setCount } = useGlobalContext();
   const [random, setRandom] = useState([]);
   const getDrink = useCallback(async () => {
     setLoading(true);
@@ -67,6 +67,9 @@ const Random = () => {
             })}
           </p>
         </div>
+      </div>
+      <div className="btn btn-primary" onClick={() => setCount(count + 1)}>
+        Another
       </div>
     </section>
   );

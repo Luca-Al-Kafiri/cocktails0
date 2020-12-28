@@ -72,8 +72,8 @@ Buttons
 .btn {
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
-  color: var(--primaryColor);
-  border: 2px solid var(--primaryColor);
+  color: var(--primaryLightColor);
+  border: 2px solid var(--primaryLightColor);
   padding: 0.45rem 0.8rem;
   display: inline-block;
   transition: var(--mainTransition);
@@ -84,7 +84,7 @@ Buttons
   display: inline-block;
 }
 .btn:hover {
-  background: var(--primaryColor);
+  background: var(--primaryLightColor);
   color: var(--mainWhite);
 }
 /* 
@@ -171,7 +171,7 @@ Cocktails List
 }
 @media screen and (min-width: 576px) {
   .cocktails-center {
-    grid-template-columns: repeat(auto-fill, minmax(338.8px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300.8px, 1fr));
   }
 }
 /* 

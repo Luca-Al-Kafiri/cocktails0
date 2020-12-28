@@ -20,7 +20,7 @@ const Nav = () => {
           </li>
           <li>
             <Link onClick={() => setCount(count + 1)} to="/random">
-              Surprise me
+              Surprise
             </Link>
           </li>
         </ul>
